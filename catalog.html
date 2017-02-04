@@ -3,27 +3,29 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Барбершоп | Магазин</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="container clearfix">
-				<a class="logo">
-					<img src="http://placehold.it/140x70">
-				</a>
 
 				<nav class="main-menu">
+				  <a class="logo" href="index.html">
+				  	<img src="img/Logo.png" width="111" height="24" alt="Логотип">
+				  </a>
 					<ul>
 						<li><a href="#">Информация</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="index.html#news">Новости</a></li>
+						<li><a href="price-list.html">Прайс-лист</a></li>
 						<li class="main-menu-active">Магазин</li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="index.html#contact">Контакты</a></li>
 					</ul>
 				</nav>
 
 				<div class="user-block">
-					<a href="#">Вход</a>
+					<a class="login" href="#login">Вход</a>
 				</div>
 			</div>
 		</header>
@@ -33,8 +35,8 @@
 			  <h1 class="main-title">Средства для ухода</h1>
 
 			  <ul class="breadcrumbs">
-			  	<li><a href="#">Главная</a></li>
-			  	<li><a href="#">Магазин</a></li>
+			  	<li><a href="index.html">Главная</a></li>
+			  	<li><a href="catalog.html">Магазин</a></li>
 			  	<li class="breadcrumbs-active">Средства для ухода</li>
 			  </ul>
 
@@ -57,7 +59,7 @@
 			  		<input type="checkbox" name="murray's" id="murray's">
 			  		<label class="filter-text filter-manufacturer" for="murray's">Murray's</label>
             <br>
-			  		<input type="checkbox" name="AmericanCrew" id="American-Crew" checked>
+			  		<input type="checkbox" name="AmericanCrew" id="american-crew" checked>
 			  		<label class="filter-text filter-manufacturer" for="american-crew">American Crew</label>
 			  	</div>
 
@@ -78,13 +80,13 @@
 
 			  <section class="catalog">
 			  	<article class="catalog-item">
-			  		<a class="btn-catalog-item" href="#">
+			  		<a class="btn-catalog-item" href="catalog-item.html">
 			  			<img src="img/Catalog-item1.jpg" width="220" height="165">
 			  		</a>
-			  		<a class="reference" href="#">
+			  		<a class="reference" href="catalog-item.html">
 			  			<span class="reference-type">Набор для путешествий</span> «Baxter of California»
 			  		</a>
-			  		<span class="price">2900 руб.</span>
+			  		<span class="price">2&nbsp;900&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
@@ -95,7 +97,7 @@
 			  		<a class="reference" href="#">
 			  			<span class="reference-type">Увлажняющий кондиционер</span> «Baxter of California»
 			  		</a>
-			  		<span class="price">750 руб.</span>
+			  		<span class="price">750&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
@@ -104,9 +106,11 @@
 			  			<img src="img/Catalog-item3.jpg" width="220" height="165">
 			  		</a>
 			  		<a class="reference" href="#">
-			  			<span class="reference-type">Гель для волос</span> «Suavecito»
+			  			<span class="reference-type">Гель для волос</span>
+			  			<br>
+			  			«Suavecito»
 			  		</a>
-			  		<span class="price">290 руб.</span>
+			  		<span class="price">290&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
@@ -117,7 +121,7 @@
 			  		<a class="reference" href="#">
 			  			<span class="reference-type">Глина для укладки волос</span> «American Crew»
 			  		</a>
-			  		<span class="price">500 руб.</span>
+			  		<span class="price">500&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
@@ -126,9 +130,9 @@
 			  			<img src="img/Catalog-item5.jpg" width="220" height="165">
 			  		</a>
 			  		<a class="reference" href="#">
-			  			<span class="reference-type">Гель для волос</span> «American Crew»
+			  			<span class="reference-type">Гель для волос</span> «American&nbsp;Crew»
 			  		</a>
-			  		<span class="price">300 руб.</span>
+			  		<span class="price">300&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
@@ -137,15 +141,15 @@
 			  			<img src="img/Catalog-item6.jpg" width="220" height="165">
 			  		</a>
 			  		<a class="reference" href="#">
-			  			<span class="reference-type">Набор для бритья</span> «Baxter of California»
+			  			<span class="reference-type">Набор для бритья</span> «Baxter&nbsp;of California»
 			  		</a>
-			  		<span class="price">3900 руб.</span>
+			  		<span class="price">3&nbsp;900&nbsp;руб.</span>
 			  		<a class="btn" href="#">Купить</a>
 			  	</article>
 
 			  	<div class="pagination">
 			  		<a class="btn" href="#">1</a>
-			  		<a class="btn active-page" href="#">2</a>
+			  		<a class="btn active-page">2</a>
 			  		<a class="btn" href="#">3</a>
 			  		<a class="btn" href="#">4</a>
 			  	</div>
@@ -153,7 +157,7 @@
       </div>
 		</main>
 
-		<footer class="main-footer">
+		<footer class="main-footer shadow">
 			<div class="container clearfix">
 				<section class="footer-contacts">
 				  Барбершоп «Бородинский»<br>
@@ -164,9 +168,9 @@
 
 				<section class="footer-social">
 					<p>Давайте дружить!</p>
-					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-					<a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
-					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn social-btn-vk" href="#"></a>
+					<a class="social-btn social-btn-fb" href="#"></a>
+					<a class="social-btn social-btn-inst" href="#"></a>
 				</section>
 
 				<section class="footer-copyright">
